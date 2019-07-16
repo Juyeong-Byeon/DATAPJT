@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<HTML lang='ko'>
+
+    <head>
+        <script src="jquery-3.4.0.js"></script>
+        <script id ='last_item' type='text/javascript' src='https://10ay.online.tableau.com/javascripts/api/viz_v1.js'></script>
+        <script type="text/javaScript">
+    
+    
+
+    jQuery(function($) {
+    $("body").css("display", "none");
+    $("body").fadeIn(1000);
+    $("a.transition").click(function(event){
+    event.preventDefault();
+    linkLocation = this.href;
+    $("body").fadeOut(1000, redirectPage);
+    });
+    function redirectPage() {
+    window.location = linkLocation;
+    }
+    }); 
+   
+            
+
+                
+                function updateWiseSaying(text){
+                    R=document.getElementById("wisesaying");
+                    R.innerHTML=text;
+                    setTimeout("updateWiseSaying('There are seven days in the week and someday is not one of them.')",3000);
+                };
+            
+
+       
+    
+    
+        </script>
+        <style>
+
+       
+        
+        body{
+            background-attachment: fixed;
+            position: relative;
+            background-color:rgb(200,30,30);
+            background-size: 100%;
+        
+           
+            text-align: center;
+            
+        }
+
+        .main_buttons{
+            position: relative;
+            top:125pt;
+            font-size:40pt;
+            font-weight:bold;
+            color: rgba(1,1,1,1);
+            border: 3pt;
+            border-style: dashed;
+            border-color: rgba(1,1,1,1);
+            border-radius: 10pt;
+            height: 15px;
+
+        }
+
+        .main_buttons:hover{
+            position: relative;
+            top:125pt;
+            font-size:40pt;
+            font-weight:bold;
+            color: rgba(1,1,1,1);
+            border: 3pt;
+            border-style: dashed;
+            border-color: rgba(1,1,1,0.7);
+            background-color: rgba(1,1,1,0.7);
+            border-radius: 10pt;
+            height: 15px;
+
+        }
+
+
+        
+
+
+        #maintimedox{
+            
+            position: relative;
+            top:150pt;
+            width: 450pt;
+            height: 200px;
+            background-image: linear-gradient(rgba(1,30,1,0.7), rgba(1,30,1,0.1));
+            display: inline-block;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px;
+            
+            
+        }
+        #maintimedox:hover{
+            position: relative;
+            top:150pt;
+            width: 450pt;
+            height: 200px;
+            background-image: linear-gradient(rgba(1,30,1,0.5), rgba(255,255,110,0.1));
+            display: inline-block;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px;
+            
+            
+        }
+
+        #time{
+            font-size: 80pt;
+            padding: 0px;
+            margin: 0px;
+            color: gainsboro;
+        }
+
+
+        #wisesaying{
+           
+            position: relative;
+            top:300pt;
+            font-size: 20pt;
+            padding: 0px;
+            margin: 0px;
+            color:white;
+        }
+       
+       
+        #nextPage{
+
+            position: absolute;
+            right:25pt;
+            font-size:80pt;
+            color: rgba(1,1,1,1);
+        }
+        #nextPage:hover{
+
+            position: absolute;
+            right:25pt;
+            font-size:85pt;
+            color: rgba(1,1,1,1);
+
+
+        }
+        #ToDoList{
+            
+            position: relative;
+            top: 200pt;
+            color:white;
+            
+
+
+        }
+        #box{
+
+            background-color:rgb(200,30,30);
+            margin: 0px;
+            text-align: center;
+
+        }
+
+        #dashboard{
+        align-items: center;
+        background-color:rgb(200,30,30);
+        margin: 0px;
+        position: relative;
+        top: 300pt;
+        color:white;
+        width: 100%;
+
+        }
+
+        #main_logo{
+
+
+            color: aliceblue;
+            font-size: 50pt;
+        }
+        #last_item{
+            position: fixed;
+            align-items: center;
+            left: 10%;
+            margin: 0px;
+            width: 100%;
+            position: relative;
+
+        }
+        
+        </style>
+
+    </head>
+            
+    <body  onload="updateWiseSaying('Hi, how are you?');">
+        <div id="box">
+        <div id='main'>
+            <span id='main_right_button' class="main_buttons"><<</span>
+            <div id='maintimedox'>
+
+                <p id='time'>GUIDE TUBE</p>
+            
+            </div >
+            <span id='main_left_button' class="main_buttons">>></span>
+        </div>
+       
+
+        <div id="wisesaying" >
+            <p id="wisecont">“There are seven days in the week and someday isn't one of them.”</p>
+        </div>
+        
+        <div id="ToDoList">
+            <form>
+                    <label for="Todo" style="font-size:15pt;  margin: 3%; margin-left: 1%;">Search Your ID :</label>
+                <input type="text" name="Todo" style=" color:aliceblue;font-size:15pt;text-align: center; width:30%;  padding: .6em .4em; background-color:rgba(1,60,1,0.1);  border-width: 0.5pt; border-radius: 10px;">
+                
+                <label for="Todo" style="font-size:15pt;margin-right: 3%;margin-left: 1%;">Search Your Idea:</label>
+                <input type="text" name="Todo" style=" color:aliceblue;font-size:15pt;text-align: center; width:30%;  padding: .6em .4em; background-color:rgba(1,60,1,0.1);  border-width: 0.5pt; border-radius: 10px;">
+
+            </form>
+
+        </div>
+    </div>
+    <div id='dashboard'>
+    
+   
+
+
+
+       
+    <div id='last_item' class='tableauPlaceholder' style='width: 1500px; height: 1650px;'>
+        <object class='tableauViz' width='1500'height='1650' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2F10ay.online.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='&#47;t&#47;datavisualizationhyuncheol' />
+        <param name='name' value='dashboard2&#47;1_1' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='showAppBanner' value='false' />
+        <param name='filter' value='iframeSizedToWindow=true' /></object>
+    </div>
+
+
+    </div>
+    </body>
+    
+
+</HTML>
